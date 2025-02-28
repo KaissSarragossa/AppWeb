@@ -1,12 +1,12 @@
 import React from 'react'
 import './voiture.css';
 
-function Voiture({prop}) {
+function Voiture({props}) {
     return (
         <div className="voiture-card">
-            <h2>{prop.marque} {prop.model}</h2>
-            <p><strong>Couleur :</strong> {prop.couleur}</p>
-            <p><strong>Année :</strong> {prop.annee}</p>
+            <h2>{props.marque} {props.model}</h2>
+            <p><strong>Couleur :</strong> {props.couleur}</p>
+            <p><strong>Année :</strong> {props.annee}</p>
         </div>
     );
 }

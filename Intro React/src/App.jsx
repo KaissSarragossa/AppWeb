@@ -1,21 +1,27 @@
 import './app.css'
-import Header from './header.jsx'
-import MainContent from './MainContent.jsx'
-import Footer from './Footer.jsx'
-import Card1 from './card-1.jsx'
-
+import Voiture from './Voiture.jsx'
+import voitures from './voitures.js'
 
 function App() {
  
+const voituresElements = voitures.map(voiture => {
+  return <Voiture
+            key={voiture.id}
+            marque={voiture.marque}
+            model={voiture.model}
+            couleur={voiture.couleur}
+            annee={voiture.annee}
+    />
+  })
 
   return (
-    <>
-      <Header/>
-      <MainContent/>
-      <Footer/>
-      <Card1/> 
-    </>
-  );
+    <div>
+      <h1>Liste voiture</h1>
+      <div className='voiture-card'>
+        {voituresElements}
+      </div>
+      
+    </div>
+  )
 }
-
-export default App
+export default App;
