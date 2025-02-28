@@ -2,8 +2,8 @@ import './app.css'
 import Header from './header.jsx'
 import MainContent from './MainContent.jsx'
 import Footer from './Footer.jsx'
-import Card1 from './card-1.jsx';
-import Voiture from './Voiture.jsx'
+import Card1 from './card-1.jsx'
+
 
 function App() {
  
@@ -13,8 +13,7 @@ function App() {
       <Header/>
       <MainContent/>
       <Footer/>
-      <Voiture/>
-      <Card1/>
+      <Card1/> 
     </>
   );
 }

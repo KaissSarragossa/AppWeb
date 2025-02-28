@@ -1,14 +1,13 @@
-import React from 'react';
-import './voiture.css'; 
+import React from 'react'
+import './voiture.css';
 
-function Voiture({props}) {
+function Voiture({prop}) {
     return (
         <div className="voiture-card">
-            <h2>{props.marque} {props.model}</h2>
-            <p><strong>Couleur :</strong> {props.couleur}</p>
-            <p><strong>Année :</strong> {props.annee}</p>
+            <h2>{prop.marque} {prop.model}</h2>
+            <p><strong>Couleur :</strong> {prop.couleur}</p>
+            <p><strong>Année :</strong> {prop.annee}</p>
         </div>
     );
 }
-
 export default Voiture;
